@@ -4,13 +4,6 @@ module.exports = (app, config, partials) => {
   app.get('/', (req, res) => {
     Cosmic.getObjects({ bucket: { slug: config.COSMIC_BUCKET } }, (err, response) => {
       res.locals.cosmic = response
-      const carousel_items = res.locals.cosmic.object.home.metafield.carousel.children
-      carousel_items.forEach((item, i) => {
-        if (i === 0)
-          item.is_first = true
-        item.index = i
-        item.imgix_url = 'https://cosmicjs.imgix.net/' + item.value
-      })
       const blurb_items = res.locals.cosmic.object.home.metafield.blurbs.children
       blurb_items.forEach((item, i) => {
         item.children.forEach((item_child, i) => {

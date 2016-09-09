@@ -3,7 +3,7 @@
     {{# page.metafield.hero.value }}
       <section id="hero" class="relative" style="background-image: url({{ page.metafield.hero.imgix_url }}?w=1200);">
         <div class="absolute w-100p h-100p" style="background-color: #000; opacity: .5; z-index: 0;"></div>
-        <div class="container text-center pt-180 relative" style="z-index: 1;">
+        <div class="container text-center pt-140 relative" style="z-index: 1;">
           <h2 class="font-40">
             {{ page.metafield.headline.value }}
           </h2>
@@ -15,8 +15,18 @@
     {{/ page.metafield.hero.value }}
     <section id="content">
       <div class="container pb-40">
-        <h1>{{ page.title }}</h1>
-        {{{ page.content }}}
+        <div>
+          <h1>{{ page.title }}</h1>
+          {{{ page.content }}}
+        </div>
+        <div class="row">
+          {{# works }}
+            <div class="col-sm-4 open-photoswipe pointer" data-images="{{# metafields }}{{ imgix_url }},{{/ metafields }}">
+              <h3>{{ title }}</h3>
+              <div class="pointer open-photoswipe w-100p h-300" style="background-image: url({{ metafields.0.imgix_url }}?w=500); background-size: cover; background-position: center"></div>
+            </div>
+          {{/ works }}
+        </div>
       </div>
     </section>
   </main>

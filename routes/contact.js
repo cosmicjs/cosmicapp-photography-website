@@ -13,6 +13,10 @@ module.exports = (app, config, partials) => {
         if (page.slug === slug)
           res.locals.page = page
       })
+      response.object.nav.metafields.forEach(nav_item => {
+        if (nav_item.value.replace('/','') === 'contact')
+          nav_item.active = true
+      })
       return res.render('contact.html', {
         partials
       })
@@ -23,7 +27,7 @@ module.exports = (app, config, partials) => {
     const data = req.body
     async.series([
       callback => {
-        Cosmic.getObject({ bucket: { slug: config.COSMIC_BUCKET } }, { slug: 'contact-form' }, (err, response) => {
+        Cosmic.getObject({ bucket: { slug: config.COSMIC_BUCKET } }, { slug: 'contact' }, (err, response) => {
           const object = response.object
           res.locals.contact_form = {
             to: _.find(object.metafields, { key: 'to' }).value,

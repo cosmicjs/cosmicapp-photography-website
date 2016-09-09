@@ -1,7 +1,4 @@
 /*!
- * Go Raines Styles
- */
-/*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -1074,7 +1071,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 15px;
   line-height: 2;
   color: #666666;
@@ -1089,12 +1086,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #131982;
+  color: #ad0900;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #090c3f;
+  color: #610500;
   text-decoration: underline;
 }
 a:focus {
@@ -1330,11 +1327,11 @@ mark,
   color: #aaaaaa;
 }
 .text-primary {
-  color: #131982;
+  color: #ad0900;
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #0c1056;
+  color: #7a0600;
 }
 .text-success {
   color: #3c763d;
@@ -1366,11 +1363,11 @@ a.text-danger:focus {
 }
 .bg-primary {
   color: #fff;
-  background-color: #131982;
+  background-color: #ad0900;
 }
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #0c1056;
+  background-color: #7a0600;
 }
 .bg-success {
   background-color: #dff0d8;
@@ -3107,26 +3104,26 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #fff;
-  background-color: #131982;
-  border-color: #10156c;
+  background-color: #ad0900;
+  border-color: #940800;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: #0c1056;
-  border-color: #000000;
+  background-color: #7a0600;
+  border-color: #140100;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0c1056;
-  border-color: #080a36;
+  background-color: #7a0600;
+  border-color: #560400;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #0c1056;
-  border-color: #080a36;
+  background-color: #7a0600;
+  border-color: #560400;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3138,8 +3135,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #fff;
-  background-color: #080a36;
-  border-color: #000000;
+  background-color: #560400;
+  border-color: #140100;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3155,11 +3152,11 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #131982;
-  border-color: #10156c;
+  background-color: #ad0900;
+  border-color: #940800;
 }
 .btn-primary .badge {
-  color: #131982;
+  color: #ad0900;
   background-color: #fff;
 }
 .btn-success {
@@ -3391,7 +3388,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #fff;
 }
 .btn-link {
-  color: #131982;
+  color: #ad0900;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3412,7 +3409,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #090c3f;
+  color: #610500;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3558,7 +3555,7 @@ tbody.collapse.in {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  background-color: #131982;
+  background-color: #ad0900;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -3992,7 +3989,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #ffffff;
-  border-color: #131982;
+  border-color: #ad0900;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4085,7 +4082,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #131982;
+  background-color: #ad0900;
 }
 .nav-stacked > li {
   float: none;
@@ -4709,7 +4706,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 2;
   text-decoration: none;
-  color: #131982;
+  color: #ad0900;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -4730,7 +4727,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #090c3f;
+  color: #610500;
   background-color: #ffffff;
   border-color: #ddd;
 }
@@ -4742,8 +4739,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > span:focus {
   z-index: 3;
   color: #fff;
-  background-color: #131982;
-  border-color: #131982;
+  background-color: #ad0900;
+  border-color: #ad0900;
   cursor: default;
 }
 .pagination > .disabled > span,
@@ -4860,11 +4857,11 @@ a.label:focus {
   background-color: #919191;
 }
 .label-primary {
-  background-color: #131982;
+  background-color: #ad0900;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #0c1056;
+  background-color: #7a0600;
 }
 .label-success {
   background-color: #5cb85c;
@@ -4928,7 +4925,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #131982;
+  color: #ad0900;
   background-color: #fff;
 }
 .list-group-item > .badge {
@@ -5003,7 +5000,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #131982;
+  border-color: #ad0900;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -5117,7 +5114,7 @@ a.thumbnail.active {
   line-height: 30px;
   color: #fff;
   text-align: center;
-  background-color: #131982;
+  background-color: #ad0900;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
@@ -5280,8 +5277,8 @@ button.list-group-item {
 .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
-  background-color: #131982;
-  border-color: #131982;
+  background-color: #ad0900;
+  border-color: #ad0900;
 }
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading,
@@ -5297,7 +5294,7 @@ button.list-group-item {
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text,
 .list-group-item.active:focus .list-group-item-text {
-  color: #767ceb;
+  color: #ff817a;
 }
 .list-group-item-success {
   color: #3c763d;
@@ -5677,22 +5674,22 @@ button.list-group-item-danger.active:focus {
   border-bottom-color: #ddd;
 }
 .panel-primary {
-  border-color: #131982;
+  border-color: #ad0900;
 }
 .panel-primary > .panel-heading {
   color: #fff;
-  background-color: #131982;
-  border-color: #131982;
+  background-color: #ad0900;
+  border-color: #ad0900;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #131982;
+  border-top-color: #ad0900;
 }
 .panel-primary > .panel-heading .badge {
-  color: #131982;
+  color: #ad0900;
   background-color: #fff;
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #131982;
+  border-bottom-color: #ad0900;
 }
 .panel-success {
   border-color: #d6e9c6;
@@ -5966,7 +5963,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6084,7 +6081,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6738,6 +6735,24 @@ body {
 a {
   text-decoration: none !important;
 }
+h1,
+h2,
+h3,
+.navbar {
+  font-family: 'Oswald', sans-serif;
+}
+#hero {
+  width: 100%;
+  height: 570px;
+  background-size: cover;
+  background-position: center;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+#content {
+  background-color: #fff;
+  color: #666;
+}
 .navbar {
   margin-bottom: 0;
 }
@@ -6749,9 +6764,24 @@ a {
 .navbar .navbar-collapse {
   text-align: center;
 }
-.footer {
-  border-top: 1px solid #e7e7e7;
-  background-color: #f8f8f8;
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}
+.navbar-brand {
+  padding: 10px 0 0 10px;
+}
+#footer {
+  border-top: 1px solid #666;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+#footer a {
+  color: #ccc;
+}
+#footer a:hover {
+  color: #fff;
 }
 .footer.sticky {
   position: absolute;

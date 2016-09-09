@@ -1,5 +1,18 @@
 {{> header }}
   <main id="main">
+    {{# page.metafield.hero.value }}
+      <section id="hero" class="relative" style="background-image: url({{ page.metafield.hero.imgix_url }}?w=1200);">
+        <div class="absolute w-100p h-100p" style="background-color: #000; opacity: .5; z-index: 0;"></div>
+        <div class="container text-center pt-180 relative" style="z-index: 1;">
+          <h2 class="font-40">
+            {{ page.metafield.headline.value }}
+          </h2>
+          <h3 class="font-50">
+            {{ page.metafield.subheadline.value }}
+          </h3>
+        </div>
+      </section>
+    {{/ page.metafield.hero.value }}
     <div class="container mb-40">
       <div class="row">
         <div class="col-sm-6">

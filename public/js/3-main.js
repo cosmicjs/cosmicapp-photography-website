@@ -101,3 +101,31 @@ function friendlyDate(a) {
   }
   return time;
 }
+// Photoswipe
+function openPhotoSwipe(images) {
+  var pswpElement = document.querySelectorAll('.pswp')[0];
+  var items = [];
+  images.forEach(function(item) {
+    if (item)
+    items.push({
+      html: '<div style="background-image: url(' + item + '?w=3000); background-repeat: no-repeat; background-position: center; background-size: contain; width: 100%; height: 100%;"></div>'
+    })
+  })
+  // build items array
+  // define options (if needed)
+  var options = {
+    // history & focus options are disabled on CodePen        
+    history: false,
+    focus: false,
+    showAnimationDuration: 0,
+    hideAnimationDuration: 0
+  };
+  var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+  gallery.init();
+};
+$(function() {
+  $('.open-photoswipe').on('click', function() {
+    var images = $(this).data('images').split(',');
+    openPhotoSwipe(images);
+  });
+})

@@ -15,6 +15,10 @@ module.exports = (app, config, partials) => {
           partials
         })  
       }
+      response.object.nav.metafields.forEach(nav_item => {
+        if (nav_item.value.replace('/','') === slug)
+          nav_item.active = true
+      })
       return res.render('page.html', {
         partials
       })
