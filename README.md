@@ -1,7 +1,7 @@
-#Node.js Website Boilerplate
-A website template that satisfies some common website requirements including dynamic pages, blog articles, author management, SEO ability, contact form and website search.  Contributions welcome!
+#Photography Website
+A website template that satisfies some common website requirements for a photography website including dynamic pages, blog articles, author management, SEO ability, contact form, website search and photo gallery page.
 ##Demo
-[Click here to view a demo website (Medical Professional)](http://medical-professional.cosmicapp.co)
+[Click here to view a demo](http://photography-website.cosmicapp.co)
 ##Features
 1. Fully responsive down to mobile w/ [Bootstrap](http://getbootstrap.com) frontend<br />
 2. SEO ready<br />
@@ -13,11 +13,11 @@ Sign up for [Cosmic JS](https://cosmicjs.com) to install the demo content and de
 
 ##Get started
 ```
-git clone https://github.com/cosmicjs/nodejs-website-boilerplate
-cd nodejs-website-boilerplate
+git clone https://github.com/cosmicjs/cosmicapp-photography-website
+cd cosmicapp-photography-website
 npm install
 ```
-Import the `example-bucket.json` file into your Cosmic JS bucket.  To do this go to Your Bucket > Settings > Import / Export Data.
+Import the `bucket.json` file into your Cosmic JS bucket.  To do this, [login to Cosmic JS](https://cosmicjs.com/login) and in your bucket left side nav, go to Import / Export.
 
 ![Import Bucket](https://cosmicjs.com/uploads/4edef890-52e6-11e6-9a1c-233e4e7aa20d-ZadK2PbDDR.gif "Import Bucket")
 
