@@ -17,7 +17,7 @@ git clone https://github.com/cosmicjs/cosmicapp-photography-website
 cd cosmicapp-photography-website
 npm install
 ```
-Import the `bucket.json` file into your Cosmic JS bucket.  To do this, [login to Cosmic JS](https://cosmicjs.com/login) and in your bucket left side nav, go to Import / Export.
+Import the `bucket.json` file into your Cosmic JS bucket.  To do this, [login to Cosmic JS](https://cosmicjs.com/login) and in your bucket left side nav, go to Import / Export.  Drag and drop the `bucket.json` file from this repo to import all data and files to get started.
 
 ###Run in production
 ```
