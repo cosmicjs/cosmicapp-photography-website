@@ -19,8 +19,6 @@ npm install
 ```
 Import the `bucket.json` file into your Cosmic JS bucket.  To do this, [login to Cosmic JS](https://cosmicjs.com/login) and in your bucket left side nav, go to Import / Export.
 
-![Import Bucket](https://cosmicjs.com/uploads/4edef890-52e6-11e6-9a1c-233e4e7aa20d-ZadK2PbDDR.gif "Import Bucket")
-
 ###Run in production
 ```
 COSMIC_BUCKET=your-bucket-slug npm start
