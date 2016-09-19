@@ -4,8 +4,10 @@
     <div class="row">
       <div class="col-sm-8">
         <div class="font-20 mb-10">Contact</div>
-        <b>Phone:</b><br />
-        {{ cosmic.object.contact-info.metafield.phone.value }}<br />
+        {{# cosmic.object.contact-info.metafield.phone.value }}
+          <b>Phone:</b><br />
+          {{ cosmic.object.contact-info.metafield.phone.value }}<br />
+        {{/ cosmic.object.contact-info.metafield.phone.value }}
         <b>Email:</b><br />
         <a href="mailto:{{ cosmic.object.contact-info.metafield.email.value }}">{{ cosmic.object.contact-info.metafield.email.value }}</a>
         <br />
@@ -15,15 +17,26 @@
       <div class="col-sm-4">
         <div class="font-20 mb-20">Connect</div>
         <div class="mb-20">
-          <a class="mr-10" href="{{ cosmic.object.social.metafield.facebook.value }}" target="_blank">
-            <i class="fa fa-facebook font-26"></i>
-          </a>
-          <a class="mr-10" href="{{ cosmic.object.social.metafield.twitter.value }}" target="_blank">
-            <i class="fa fa-twitter font-26"></i>
-          </a>
-          <a class="mr-10" href="{{ cosmic.object.social.metafield.linkedin.value }}" target="_blank">
-            <i class="fa fa-linkedin font-26"></i>
-          </a>
+          {{# cosmic.object.social.metafield.facebook.value }}
+            <a class="mr-10" href="{{ cosmic.object.social.metafield.facebook.value }}" target="_blank">
+              <i class="fa fa-facebook font-26"></i>
+            </a>
+          {{/ cosmic.object.social.metafield.facebook.value }}
+          {{# cosmic.object.social.metafield.twitter.value }}
+            <a class="mr-10" href="{{ cosmic.object.social.metafield.twitter.value }}" target="_blank">
+              <i class="fa fa-twitter font-26"></i>
+            </a>
+          {{/ cosmic.object.social.metafield.twitter.value }}
+          {{# cosmic.object.social.metafield.linkedin.value }}
+            <a class="mr-10" href="{{ cosmic.object.social.metafield.linkedin.value }}" target="_blank">
+              <i class="fa fa-linkedin font-26"></i>
+            </a>
+          {{/ cosmic.object.social.metafield.linkedin.value }}
+          {{# cosmic.object.social.metafield.instagram.value }}
+            <a class="mr-10" href="{{ cosmic.object.social.metafield.instagram.value }}" target="_blank">
+              <i class="fa fa-instagram font-26"></i>
+            </a>
+          {{/ cosmic.object.social.metafield.instagram.value }}
         </div>
         <div class="mb-20">
           &copy; {{ year }} {{ cosmic.object.footer.metafield.company_title.value }}
