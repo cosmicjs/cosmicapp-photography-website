@@ -7,7 +7,8 @@ A website template that satisfies some common website requirements for a photogr
 2. SEO ready<br />
 3. A contact form that sends an email to your email(s) of choice and to [Cosmic JS](https://cosmicjs.com) for easy reference<br />
 4. Full-site search functionality<br />
-5. All content is easily managed in [Cosmic JS](https://cosmicjs.com) including pages, blog and contact info.
+5. Work page gallery powered by [Photoswipe](http://photoswipe.com) and easily managed by [Cosmic JS](https://cosmicjs.com)
+6. All content is easily managed in [Cosmic JS](https://cosmicjs.com) including pages and contact info.
 
 Sign up for [Cosmic JS](https://cosmicjs.com) to install the demo content and deploy this website.
 
