@@ -1,6 +1,5 @@
 // contact.js
 import Cosmic from 'cosmicjs'
-import nodemailer from 'nodemailer'
 import async from 'async'
 import _ from 'lodash'
 module.exports = (app, config, partials) => {
@@ -31,7 +30,7 @@ module.exports = (app, config, partials) => {
           const object = response.object
           res.locals.contact_form = {
             to: _.find(object.metafields, { key: 'to' }).value,
-            subject: _.find(object.metafields, { key: 'subject' }).value,
+            subject: _.find(object.metafields, { key: 'subject' }).value
           }
           callback()
         })
@@ -43,24 +42,19 @@ module.exports = (app, config, partials) => {
         text_body += 'Phone: ' + data.phone + '<br />'
         text_body += 'Message: <br />' + data.message + '<br /><br />'
         text_body += 'Login to your Cosmic JS bucket dashboard to view your form submissions: https://cosmicjs.com<br />'
-        if (!config.SMTPS_STRING)
-          return res.status(500).send({ "status": "error", "message": "Email not sent.  You need to add the smtps string to your config." })
-        const transporter = nodemailer.createTransport(config.SMTPS_STRING);
-        var mailOptions = {
-          from: 'Cosmic JS <support@cosmicjs.com>', // sender address
-          to: res.locals.contact_form.to, // list of receivers
-          subject: res.locals.contact_form.subject, // Subject line
-          text: text_body, // plaintext body
-          html: text_body // html body
+        var api_key = config.MAILGUN_KEY // add mailgun key
+        var domain = config.MAILGUN_DOMAIN // add mailgun domain
+        if (!api_key || !domain)
+          return res.status(500).send({ "status": "error", "message": "You must add a MailGun api key and domain.  Contact your developer to add these values." })
+        var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain })
+        var message = {
+          from: data.email,
+          to: res.locals.contact_form.to,
+          subject: data.full_name + ' sent you a new message: ' + res.locals.contact_form.subject,
+          html: text_body
         }
-        // Send mail with defined transport object
-        transporter.sendMail(mailOptions, function(error, info){
-          if(error){
-            console.log(error)
-            return res.status(500).send({ "status": "error", "message": "Email not sent.  You need to add the smtps string to your config." })
-          } else {
-            callback()
-          }
+        mailgun.messages().send(message, function (error, body) {
+          callback()
         })
       },
       callback => {
