@@ -31,6 +31,8 @@ Create a `config/development.js` file and match it to `config/production.js` wit
 npm run development
 ```
 Go to [http://localhost:5000](http://localhost:5000).
-###Config
-####Contact email
-Because Node.js doesn't have a mail server, the contact form uses an SMTPS string to connect to your mail server of choice. To do this, add an `SMTPS_STRING` to your ENV vars in your Cosmic JS bucket.  This is located in Your Bucket > Settings > Deploy Website.  An example string looks like: `smtps://yourname%40gmail.com:yourpass@smtp.gmail.com`.
+###Setting up MailGun to send emails from the contact form
+Because Node.js doesn't have a mail server, the contact form uses MailGun to send eamils.
+1. Go to MailGun and login to your account or setup a new account.
+2. Get your api key and domain.
+3. Add your domain and api key to your environment variables (MAILGUN_DOMAIN, MAILGUN_KEY) located in a tab on Your Bucket > Web Hosting, or hard code them into `app.js` (not advised).
